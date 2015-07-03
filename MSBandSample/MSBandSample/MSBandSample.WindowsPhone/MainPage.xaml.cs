@@ -226,7 +226,7 @@ namespace MSBandSample
 
         async void SecondTimer_Tick(object sender, object e)
         {
-            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { this.HeartHateValue.Text = !string.IsNullOrEmpty(this.heartRate) ? this.heartRate : string.Empty; }).AsTask();
+            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { this.HeartRateValue.Text = !string.IsNullOrEmpty(this.heartRate) ? this.heartRate : string.Empty; }).AsTask();
             await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { this.TemperatureValue.Text = !string.IsNullOrEmpty(this.tempetature) ? this.tempetature : string.Empty; }).AsTask();
             await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { this.AccelerometerValue.Text = !string.IsNullOrEmpty(this.accelerometer) ? this.accelerometer : string.Empty; }).AsTask();
             await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { this.CaloriesValue.Text = !string.IsNullOrEmpty(this.calories) ? this.calories : string.Empty; }).AsTask();
@@ -240,7 +240,7 @@ namespace MSBandSample
 
         async Task ClearFields()
         {
-            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { this.HeartHateValue.Text = string.Empty; }).AsTask();
+            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { this.HeartRateValue.Text = string.Empty; }).AsTask();
             await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { this.TemperatureValue.Text = string.Empty; }).AsTask();
             await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { this.AccelerometerValue.Text = string.Empty; }).AsTask();
             await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { this.CaloriesValue.Text = string.Empty; }).AsTask();

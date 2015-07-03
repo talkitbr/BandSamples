@@ -47,8 +47,8 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Button Grid.ColumnSpan="2" Grid.Row="0" x:Name="ConnectButton" Content="Connect Band" HorizontalAlignment="Center" Click="Button_Click"></Button>
-            <TextBlock Grid.Row="1" Grid.Column="0" Text="Heart Hate:" FontSize="{StaticResource TextStyleExtraLargeFontSize}" Margin="0,0,10,0"></TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="1" x:Name="HeartHateValue" FontSize="{StaticResource TextStyleExtraLargeFontSize}"></TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Heart Rate:" FontSize="{StaticResource TextStyleExtraLargeFontSize}" Margin="0,0,10,0"></TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="1" x:Name="HeartRateValue" FontSize="{StaticResource TextStyleExtraLargeFontSize}"></TextBlock>
             <TextBlock Grid.Row="2" Grid.Column="0" Text="Temperature:" FontSize="{StaticResource TextStyleExtraLargeFontSize}" Margin="0,0,10,0"></TextBlock>
             <TextBlock Grid.Row="2" Grid.Column="1" x:Name="TemperatureValue" FontSize="{StaticResource TextStyleExtraLargeFontSize}"></TextBlock>
 
